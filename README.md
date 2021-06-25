@@ -26,3 +26,31 @@ sudo apt-get install -y mongodb-org
 # Websites:
 
 https://studio3t.com/download/
+
+# Aliases
+
+`
+nano ~/.bashrc
+`
+
+`
+killport(){ 
+  sudo kill -9 $(sudo fuser -n tcp $1 2> /dev/null);
+}
+
+alias add='git add .'
+alias commit='git add .; git commit -m'
+alias gcm='git commit -m'
+alias ns='npm start'
+alias push='git push'
+alias dev='git checkout dev; git pull'
+alias devel='git checkoud devel; git pull'
+alias branch='git checkout -b'
+alias fn0='echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode'
+alias fn1='echo 1 | sudo tee /sys/module/hid_apple/parameters/fnmode'
+`
+
+`
+source ~/.bashrc
+`
+
