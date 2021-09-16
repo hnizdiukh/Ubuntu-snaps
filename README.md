@@ -1,19 +1,19 @@
 # Commands to install:
 
-`
+```
 sudo apt-get install git
 sudo snap install flameshot discord slack telegram-desktop code node
-`
+```
 ## chrome
-`
+```
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
-`
+```
 ## meteor
-`
+```
 sudo apt install curl
 curl https://install.meteor.com/ | sh
-`
+```
 
 ## mongo
 ```
@@ -43,6 +43,7 @@ alias commit='git add .; git commit -m'
 alias gcm='git commit -m'
 alias ns='npm start'
 alias push='git push'
+alias pushu='git push -u origin HEAD'
 alias dev='git checkout dev; git pull'
 alias devel='git checkout devel; git pull'
 alias branch='git checkout -b'
