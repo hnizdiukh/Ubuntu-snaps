@@ -23,6 +23,11 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 ```
 
+## NVM
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
+
 # Websites:
 
 https://studio3t.com/download/
