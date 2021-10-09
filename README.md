@@ -2,7 +2,10 @@
 
 ```
 sudo apt-get install git
-sudo snap install flameshot discord slack telegram-desktop code node
+sudo snap install postman flameshot discord  telegram-desktop  node
+sudo snap install slack --classic
+sudo snap install code --classic
+sudo snap install node --classic
 ```
 ## chrome
 ```
@@ -51,6 +54,8 @@ alias push='git push'
 alias pushu='git push -u origin HEAD'
 alias dev='git checkout dev; git pull'
 alias devel='git checkout devel; git pull'
+alias main='git checkout main; git pull'
+alias master='git checkout master; git pull'
 alias branch='git checkout -b'
 alias fn0='echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode'
 alias fn1='echo 1 | sudo tee /sys/module/hid_apple/parameters/fnmode'
