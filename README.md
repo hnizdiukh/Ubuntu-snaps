@@ -47,9 +47,15 @@ killport(){
 }
 
 alias add='git add .'
-alias commit='git add .; git commit -m'
+alias commit='git add .; gitmoji -c'
 alias gcm='git commit -m'
 alias ns='npm start'
+alias nc='npm run clean'
+alias ncns='nc && ns'
+alias nb='npm run build'
+alias nbnd='nb && nd'
+alias nd='npm run develop'
+alias nda='npm run develop -- --watch-admin'
 alias push='git push'
 alias pushu='git push -u origin HEAD'
 alias dev='git checkout dev; git pull'
@@ -59,6 +65,10 @@ alias master='git checkout master; git pull'
 alias branch='git checkout -b'
 alias fn0='echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode'
 alias fn1='echo 1 | sudo tee /sys/module/hid_apple/parameters/fnmode'
+alias git-work='git config --global user.email "v.hnizdiukh@apiko.com" && git config --global user.name vhnizdiukh'
+alias git-personal='git config --global user.email "ekstrumal@ukr.net" && git config --global user.name hnizdiukh'
+alias vpn-up='sudo wg-quick up wg0'
+alias vpn-down='sudo wg-quick down wg0'
 ```
 
 `
